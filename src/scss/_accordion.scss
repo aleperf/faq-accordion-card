@@ -1,0 +1,113 @@
+.accordion {
+  background-color: $card-bg-color;
+  width: 90%;
+  border-radius: 20px;
+  // padding-bottom: 5rem;
+  padding: 0 2rem 5rem 2rem;
+  margin-top: 9rem;
+  position: relative;
+  z-index: 10;
+
+  &__decoration {
+    width: 240px;
+    margin: auto;
+    height: 104px;
+    background-image: url("./../images/bg-pattern-mobile.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: relative;
+    z-index: 50;
+    margin-bottom: 1rem;
+  }
+
+  &__decoration::before {
+    content: "";
+    background-image: url("./../images/illustration-woman-online-mobile.svg");
+    height: 196px;
+    width: 266px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    transform: translate(-10px, -50%);
+    left: -15px;
+
+    position: absolute;
+  }
+
+  &__faq {
+    &-title {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    &-question {
+      z-index: 1000;
+
+      input[type="radio"] {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+
+        &:checked {
+          & ~ p {
+            height: auto;
+            opacity: 1;
+            color: $text-color-light;
+            line-height: 1.5;
+            font-size: 1.2;
+            padding-bottom: 2rem;
+          }
+
+          & ~ label {
+            color: $text-color-medium;
+            font-size: 1.4rem;
+            font-weight: 700;
+
+            img {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+
+      p {
+        height: 0;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+      }
+
+      label {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        position: relative;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+
+        &:hover {
+          color: $text-active-color;
+          cursor: pointer;
+        }
+
+        img {
+          transform: rotate(0);
+          display: inline-block;
+          width: 10px;
+          height: 7px;
+        }
+      }
+    }
+    hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid $divider-color;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient($gradient-1-color, $gradient-2-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $text-color-medium;
+  font-family: $main-font;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.2rem;
+}
