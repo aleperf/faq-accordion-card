@@ -1,17 +1,49 @@
 .accordion {
   background-color: $card-bg-color;
   width: 90%;
+
   border-radius: 20px;
-  // padding-bottom: 5rem;
   padding: 0 2rem 5rem 2rem;
-  margin-top: 9rem;
+  margin-top: 12rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
   z-index: 10;
+  //500px
+  @media screen and (min-width: 31.25em) {
+    width: 80%;
+  }
+  //700px
+  @media screen and (min-width: 43.75em) {
+    width: 70%;
+    padding: 0 4rem 5rem 4rem;
+  }
+
+  @media screen and (min-width: 56.25em) {
+    width: 65%;
+  }
+
+  //1100px
+  @media screen and (min-width: 68.75em) {
+    flex-direction: row;
+    //height: 50rem;
+    width: 80%;
+    margin-top: 0;
+    padding: 0;
+
+    align-items: stretch;
+    justify-items: stretch;
+  }
+
+  //1400px
+  @media screen and (min-width: 87.5em) {
+    max-width: 100rem;
+  }
 
   &__decoration {
-    width: 240px;
+    width: 200px;
     margin: auto;
-    height: 104px;
+    height: 80px;
     background-image: url("./../images/bg-pattern-mobile.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -19,33 +51,99 @@
     position: relative;
     z-index: 50;
     margin-bottom: 1rem;
+
+    @media screen and (min-width: 20em) {
+      width: 240px;
+      margin: auto;
+      height: 104px;
+    }
+
+    //1100
+    @media screen and (min-width: 68.75em) {
+      flex: 50%;
+      height: auto;
+      width: auto;
+      margin: 0;
+      background-position: left center;
+      background-image: url("./../images/bg-pattern-desktop.svg");
+      background-size: 170% 170%;
+      background-position-x: 130%;
+      background-position-y: 70%;
+      z-index: 100000;
+    }
   }
 
   &__decoration::before {
     content: "";
     background-image: url("./../images/illustration-woman-online-mobile.svg");
-    height: 196px;
-    width: 266px;
+    height: 147px;
+    width: 200px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    transform: translate(-10px, -50%);
+    transform: translate(0, -85px);
     left: -15px;
 
     position: absolute;
+
+    @media screen and (min-width: 20em) {
+      height: 196px;
+      width: 266px;
+      background-repeat: no-repeat;
+      background-position: center top;
+      transform: translate(-10px, -110px);
+      left: -15px;
+    }
+
+    //900px
+    @media screen and (min-width: 68.75em) {
+      background-image: url("./../images/illustration-woman-online-desktop.svg");
+      height: 350px;
+      width: 420px;
+      background-size: cover;
+      background-position: -70px 0;
+      transform: translate(15px, 40px);
+    }
+  }
+
+  &__decoration::after {
+    content: none;
+    //1100px
+    @media screen and (min-width: 68.75em) {
+      content: "";
+      width: 191px;
+      height: 184px;
+      background-image: url("./../images/illustration-box-desktop.svg");
+      position: absolute;
+
+      background-repeat: no-repeat;
+      background-position: left;
+      transform: translate(-95px, 175px);
+    }
   }
 
   &__faq {
+    //900px
+    @media screen and (min-width: 68.75em) {
+      flex: 50%;
+      padding: 6rem 5rem 6rem 0;
+    }
     &-title {
       text-align: center;
       font-size: 3rem;
       font-weight: 700;
       margin-bottom: 1rem;
+
+      //900px
+      @media screen and (min-width: 68.75em) {
+        text-align: left;
+      }
     }
 
     &-question {
       z-index: 1000;
 
-      input[type="radio"] {
+      input[type="checkbox"] {
         opacity: 0;
         width: 0;
         height: 0;
@@ -78,6 +176,7 @@
         height: 0;
         opacity: 0;
         transition: all 0.2s ease-in-out;
+        padding-right: 1rem;
       }
 
       label {
@@ -98,6 +197,7 @@
           display: inline-block;
           width: 10px;
           height: 7px;
+          transition: all 0.2s ease;
         }
       }
     }

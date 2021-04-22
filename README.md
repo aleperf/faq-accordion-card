@@ -1,100 +1,70 @@
 # Solution to the FAQ accordion card challenge on Frontend Mentor.
 
-This is my solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam).
+<p align="center">
+<img src="./screenshots/desktop-intro.png" width="700">
+</p>
+
+This is my solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam), realized using only HTML and SCSS.
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
+  - [Links to code and live version](#links)
 - [My process](#my-process)
+
   - [Built with](#built-with)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-- [UFFA](#uffa)
 
 ## Overview
 
 ### The challenge
 
-Users should be able to:
+The challenge consists in building a responsive accordion, a graphical element of stacked items that can be clicked to reveal more content.
+
+For this challenge, as per specification, the user should be able to :
 
 - View the optimal layout for the component depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Hide/Show the answer to a question when the question is clicked
+- See hover states for all interactive elements on the page.
+- Hide/Show the answer to a question when the question is clicked.
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Below a screenshot of the mobile version of the app at 375px width.
+
+<p align="center">
+<img src="./screenshots/mobile-iphone-12.png">
+</p>
+
+And below another screenshots of the desktop app showing more than one tab open and the hover effect on a FAQ.
+
+<p align="center">
+<img src="./screenshots/desktop-hover.png" width="800">
+</p>
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [the FAQ accordion on github](https://github.com/aleperf/faq-accordion-car) (if you reading this README on github, this is the page you are watching).
+- Live Site URL: [whatch the live solution on github pages](https://aleperf.github.io/faq-accordion-card/)
 
 ## My process
 
+There are several ways to build an accordion and the first decision is about the UX: should the user be able to open more than one tab at the time? Or this should be a classic accordion in which only one element can be opened at a time?
+<br>
+The first solution offers more flexibility to the user, the second makes the UI less cluttered with information. In the end I decided for the first solution: the user should be able to read all the information needed.
+
+Once decided the strategy, the decision has been about the tactic: how to implement the accordion? The Frontend Mentor site suggested that a solution with only HTML and CSS and no javascript was considered a "bonus" solution, so in the end it was pretty simple: I transformed a series of checkboxes in an accordion. I took advantage of the fact that when a checkbox or its label is clicked the browser add the attribute "checked" to the element, so every kind of element following the checkbox can be styled differently for both cases: a style when the checkbox is checked, and another when the checkbox isn't checked.
+The checkbox doesn't even need to be visible: it can be hidden, leaving the label to act as an element to toggle. The label can contain an image (the arrow in the pictures) that is considered part of the label itself, therefore clickable.
+
 ### Built with
 
-- Semantic HTML5 markup
+- HTML5 markup
 - SASS/CSS
 - Flexbox
 - Mobile-first workflow
 
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
-
-## uffa
+- [@aleperf](https://github.com/aleperf)
