@@ -10,7 +10,7 @@ This is my solution to the [FAQ accordion card challenge on Frontend Mentor](htt
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links to code and live version](#links)
 - [My process](#my-process)
 
@@ -30,7 +30,7 @@ For this challenge, as per specification, the user should be able to :
 - See hover states for all interactive elements on the page.
 - Hide/Show the answer to a question when the question is clicked.
 
-### Screenshot
+### Screenshots
 
 Below a screenshot of the mobile version of the app at 375px width.
 
@@ -38,7 +38,7 @@ Below a screenshot of the mobile version of the app at 375px width.
 <img src="./screenshots/mobile-iphone-12.png">
 </p>
 
-And below another screenshots of the desktop app showing more than one tab open and the hover effect on a FAQ.
+And below another screenshot of the desktop app showing more than one tab open and the hover effect on a FAQ.
 
 <p align="center">
 <img src="./screenshots/desktop-hover.png" width="800">
