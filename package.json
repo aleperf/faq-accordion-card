@@ -6,7 +6,7 @@
   "main": "main.js",
   "scripts": {
     "start": "rm -rf ./development && rm -rf ./.cache && parcel src/index.html --out-dir development -p 3000",
-    "build": "parcel build src/index.html --out-dir dist --public-url /fylo-dark-theme-landing-page",
+    "build": "parcel build src/index.html --out-dir dist --public-url /faq-accordion-card",
     "deploy": "gh-pages -d dist"
   },
   "author": "aleperf",
